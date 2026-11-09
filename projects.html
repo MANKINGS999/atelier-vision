@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects | Atelier Vision Technologies</title>
+<meta name="description" content="Jigs and fixtures, machined parts, dies and tooling from our design office and workshop.">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<!-- shared SVG defs -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="gSteel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f0ea"/><stop offset=".45" stop-color="#b1b3b5"/><stop offset="1" stop-color="#6a6d70"/></linearGradient>
+    <linearGradient id="gSteelH" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7a7d80"/><stop offset=".3" stop-color="#e9e6df"/><stop offset=".6" stop-color="#a5a7aa"/><stop offset="1" stop-color="#5b5e61"/></linearGradient>
+    <linearGradient id="gDark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a4743"/><stop offset="1" stop-color="#161513"/></linearGradient>
+    <linearGradient id="gDarkH" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#55524d"/><stop offset=".25" stop-color="#34322f"/><stop offset="1" stop-color="#151413"/></linearGradient>
+    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#52708a"/><stop offset=".5" stop-color="#2b4660"/><stop offset="1" stop-color="#18283a"/></linearGradient>
+    <linearGradient id="gBronze" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9b47a"/><stop offset="1" stop-color="#7d5c33"/></linearGradient>
+    <radialGradient id="gJet" cx=".5" cy=".5" r=".6"><stop offset="0" stop-color="#e8c23a"/><stop offset=".3" stop-color="#7fc24a"/><stop offset=".65" stop-color="#2b9cc0"/><stop offset="1" stop-color="#2a3ba0"/></radialGradient>
+    <linearGradient id="gJet2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a3ba0"/><stop offset=".3" stop-color="#2b9cc0"/><stop offset=".55" stop-color="#7fc24a"/><stop offset=".8" stop-color="#e8c23a"/><stop offset="1" stop-color="#d4452e"/></linearGradient>
+    <linearGradient id="gJet3" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d4452e"/><stop offset=".25" stop-color="#e8c23a"/><stop offset=".5" stop-color="#4aa87a"/><stop offset="1" stop-color="#2a3ba0"/></linearGradient>
+    <linearGradient id="gLegend" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d4452e"/><stop offset=".3" stop-color="#e8c23a"/><stop offset=".6" stop-color="#4aa87a"/><stop offset="1" stop-color="#2a3ba0"/></linearGradient>
+    <linearGradient id="gStream" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2b9cc0"/><stop offset=".55" stop-color="#7fc24a"/><stop offset="1" stop-color="#e8c23a"/></linearGradient>
+    <linearGradient id="gHeroGlass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".10"/><stop offset=".4" stop-color="#fff" stop-opacity="0"/><stop offset=".7" stop-color="#fff" stop-opacity=".05"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <symbol id="logo" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 34 L19.5 12 L24 22.5 L28.5 12 L38 34" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M16 28 H32" stroke="currentColor" stroke-width="1.4"/></symbol>
+    <symbol id="part" viewBox="0 0 200 180"><path d="M100 10C128 10 138 24 148 38C166 33 186 44 188 68C190 88 176 98 168 108C182 124 180 150 160 160C140 170 124 160 112 150C105 170 95 170 88 150C76 160 60 170 40 160C20 150 18 124 32 108C24 98 10 88 12 68C14 44 34 33 52 38C62 24 72 10 100 10Z"/></symbol>
+    <symbol id="partholes" viewBox="0 0 200 180"><g fill="#0b0a09" stroke="rgba(255,255,255,.25)" stroke-width="1.2"><circle cx="100" cy="92" r="30"/><circle cx="46" cy="64" r="11"/><circle cx="154" cy="64" r="11"/><circle cx="50" cy="132" r="11"/><circle cx="150" cy="132" r="11"/></g></symbol>
+    <symbol id="ic-design" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M24 6 40 15v18L24 42 8 33V15z"/><path d="M8 15l16 9 16-9M24 24v18"/></g></symbol>
+    <symbol id="ic-sim" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="24" cy="24" r="17"/><path d="M7 24h34M24 7v34M12 12l24 24M36 12 12 36"/><circle cx="24" cy="24" r="8"/></g></symbol>
+    <symbol id="ic-mfg" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><rect x="19" y="4" width="10" height="14"/><path d="M17 18h14l-3 10h-8zM22 28h4v10l-2 4-2-4z"/><path d="M8 44h32"/></g></symbol>
+    <symbol id="ic-val" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M8 34a17 17 0 1 1 32 0"/><path d="M24 30l9-12"/><circle cx="24" cy="31" r="2.4"/><path d="M11 24l2 1M16 15l1.5 1.5M24 10v2M32 15l-1.5 1.5M37 24l-2 1"/></g></symbol>
+    <symbol id="ic-auto" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><circle cx="24" cy="24" r="6"/><path d="M21 5h6l1 5 4 2 5-2 4 4-2 5 2 4 5 1v6l-5 1-2 4 2 5-4 4-5-2-4 2-1 5h-6l-1-5-4-2-5 2-4-4 2-5-2-4-5-1v-6l5-1 2-4-2-5 4-4 5 2 4-2z" transform="scale(.82) translate(5.5 5.5)"/></g></symbol>
+    <symbol id="ic-pin" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M24 43S10 29 10 19a14 14 0 0 1 28 0c0 10-14 24-14 24z"/><circle cx="24" cy="19" r="5"/></g></symbol>
+    <symbol id="ic-proto" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M24 5 40 14v20L24 43 8 34V14z"/><circle cx="24" cy="24" r="6"/><path d="M24 5v13M24 30v13M8 14l11 6M29 28l11 6M40 14l-11 6M19 28 8 34"/></g></symbol>
+    <symbol id="ic-oem" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="17" cy="16" r="6"/><circle cx="33" cy="18" r="5"/><path d="M5 38c0-8 5-13 12-13s12 5 12 13M28 27c8-2 15 2 15 11"/></g></symbol>
+  </defs>
+</svg>
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="index.html" aria-label="Atelier Vision Technologies, home">
+      <img class="brand-logo" src="img/logo.webp" width="900" height="475" alt="">
+    </a>
+    <p class="tag">Engineering ideas<br>into real solutions.</p>
+    <nav class="nav" id="nav" aria-label="Primary"><a href="index.html">Home</a><a href="capabilities.html">Capabilities</a><a href="projects.html" aria-current="page">Projects</a><a href="simulation.html">Simulation</a><a href="automation.html">Automation</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+    <a class="btn btn-solid" href="contact.html"><span>Start a project</span><span class="ar" aria-hidden="true">→</span></a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><i></i></button>
+  </div>
+</header>
+<main id="main">
+<!-- B -->
+<section class="sec page-sec" id="projects">
+  <div class="b-wrap">
+    <div class="b-copy rv">
+      <div class="head"><span class="idx">[ 03 / 06 ]</span><span class="label">Featured projects</span></div>
+      <h1 class="h2">From CAD to reality.</h1>
+      <p>Real engineering projects.<br>Real industry impact.</p>
+      <a class="b-link" href="contact.html"><span>Discuss a project</span><span aria-hidden="true">→</span></a>
+    </div>
+    <div class="rv">
+      <div class="b-ctrl"><button id="prev" aria-label="Previous projects">←</button><button id="next" aria-label="Next projects">→</button></div>
+      <div class="track" id="track" tabindex="0" aria-label="Featured projects">
+        <article class="proj"><span class="n">01</span><h3>Reinf Bumper Compt RR Control Fixture</h3>
+          <div class="art" role="img" aria-label="Illustration of a blue-framed bumper reinforcement control fixture"><svg class="cadbg" viewBox="0 0 300 220" aria-hidden="true"><g fill="none" stroke="#0f0e0d" stroke-width=".6"><circle cx="230" cy="90" r="50"/><circle cx="230" cy="90" r="30"/><path d="M160 90h140M230 20v140"/></g></svg><div data-art="fix1"></div></div>
+          <dl class="meta"><div><dt>Client</dt><dd>Volvo Eicher</dd></div><div><dt>Software</dt><dd>CATIA V5 R20</dd></div></dl></article>
+        <article class="proj"><span class="n">02</span><h3>PTO Shaft Bearing Pressing Fixture</h3>
+          <div class="art" role="img" aria-label="Illustration of a four-post bearing pressing fixture"><svg class="cadbg" viewBox="0 0 300 220" aria-hidden="true"><g fill="none" stroke="#0f0e0d" stroke-width=".6"><circle cx="230" cy="90" r="50"/><circle cx="230" cy="90" r="30"/><path d="M160 90h140M230 20v140"/></g></svg><div data-art="fix2"></div></div>
+          <dl class="meta"><div><dt>Client</dt><dd>Mahindra</dd></div><div><dt>Software</dt><dd>SolidEdge</dd></div></dl></article>
+        <article class="proj"><span class="n">03</span><h3>Sealant Dispensing Machine</h3>
+          <div class="art" role="img" aria-label="Illustration of an enclosed sealant dispensing machine"><svg class="cadbg" viewBox="0 0 300 220" aria-hidden="true"><g fill="none" stroke="#0f0e0d" stroke-width=".6"><circle cx="230" cy="90" r="50"/><circle cx="230" cy="90" r="30"/><path d="M160 90h140M230 20v140"/></g></svg><div data-art="disp"></div></div>
+          <dl class="meta"><div><dt>Client</dt><dd>Mahindra</dd></div><div><dt>Software</dt><dd>SolidEdge</dd></div></dl></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="sec gal" id="gallery">
+  <div class="head rv"><span class="idx">[ 03b / 06 ]</span><span class="label">Workshop &amp; design gallery</span></div>
+  <h2 class="h2 rv">Real parts.<br>Real fixtures.</h2>
+  <div class="chips rv" role="group" aria-label="Filter by category"><button class="chip-f is-on" data-f="all" aria-pressed="true">All</button><button class="chip-f" data-f="fixtures" aria-pressed="false">Jigs & Fixtures</button><button class="chip-f" data-f="parts" aria-pressed="false">Machine Parts</button><button class="chip-f" data-f="dies" aria-pressed="false">Dies & Tooling</button><button class="chip-f" data-f="conveyor" aria-pressed="false">Conveyor Lines</button></div>
+  <ul class="g-grid" id="gGrid"><li class="g-item" data-c="fixtures"><button class="g-btn" data-lb="img/fixture-a.webp" data-cap="Component fixture" aria-label="Open Component fixture"><span class="g-ph"><img src="img/fixture-a.webp" width="1100" height="942" alt="CAD model of a green component held on a twin-saddle fixture plate" loading="lazy" decoding="async"></span><span class="g-meta"><b>Component fixture</b><i>Jigs & Fixtures</i></span><span class="ph-tag">CAD</span></button></li><li class="g-item" data-c="fixtures"><button class="g-btn" data-lb="img/fixture-se.webp" data-cap="Fixture block, Solid Edge" aria-label="Open Fixture block, Solid Edge"><span class="g-ph"><img src="img/fixture-se.webp" width="1100" height="920" alt="Solid Edge 3D model of a fixture block with locating pins" loading="lazy" decoding="async"></span><span class="g-meta"><b>Fixture block, Solid Edge</b><i>Jigs & Fixtures</i></span><span class="ph-tag">CAD</span></button></li><li class="g-item" data-c="fixtures"><button class="g-btn" data-lb="img/fixture-b.webp" data-cap="Plate fixture" aria-label="Open Plate fixture"><span class="g-ph g-cat"><img src="img/fixture-b.webp" width="950" height="764" alt="Blue transparent CAD model of a circular plate fixture with mounting holes" loading="lazy" decoding="async"></span><span class="g-meta"><b>Plate fixture</b><i>Jigs & Fixtures</i></span><span class="ph-tag">CAD</span></button></li><li class="g-item" data-c="fixtures"><button class="g-btn" data-lb="img/fixture-cmm.webp" data-cap="Long inspection fixture" aria-label="Open Long inspection fixture"><span class="g-ph"><img src="img/fixture-cmm.webp" width="731" height="1300" alt="Long machined fixture with V-saddles on an inspection floor" loading="lazy" decoding="async"></span><span class="g-meta"><b>Long inspection fixture</b><i>Jigs & Fixtures</i></span><span class="ph-tag">Built</span></button></li><li class="g-item" data-c="parts"><button class="g-btn" data-lb="img/blocks.webp" data-cap="Machined blocks" aria-label="Open Machined blocks"><span class="g-ph"><img src="img/blocks.webp" width="1200" height="897" alt="Three machined steel blocks with bored holes" loading="lazy" decoding="async"></span><span class="g-meta"><b>Machined blocks</b><i>Machine Parts</i></span><span class="ph-tag">Built</span></button></li><li class="g-item" data-c="parts"><button class="g-btn" data-lb="img/turned-a.webp" data-cap="Turned flange component" aria-label="Open Turned flange component"><span class="g-ph"><img src="img/turned-a.webp" width="1100" height="756" alt="Black turned component with stepped bore" loading="lazy" decoding="async"></span><span class="g-meta"><b>Turned flange component</b><i>Machine Parts</i></span><span class="ph-tag">Built</span></button></li><li class="g-item" data-c="parts"><button class="g-btn" data-lb="img/turned-b.webp" data-cap="Turned stepped part" aria-label="Open Turned stepped part"><span class="g-ph"><img src="img/turned-b.webp" width="883" height="1100" alt="Black turned stepped cylindrical part" loading="lazy" decoding="async"></span><span class="g-meta"><b>Turned stepped part</b><i>Machine Parts</i></span><span class="ph-tag">Built</span></button></li><li class="g-item" data-c="parts"><button class="g-btn" data-lb="img/brass.webp" data-cap="Brass threaded fitting" aria-label="Open Brass threaded fitting"><span class="g-ph"><img src="img/brass.webp" width="864" height="696" alt="Brass hex fitting with machined thread" loading="lazy" decoding="async"></span><span class="g-meta"><b>Brass threaded fitting</b><i>Machine Parts</i></span><span class="ph-tag">Built</span></button></li><li class="g-item" data-c="parts"><button class="g-btn" data-lb="img/discs.webp" data-cap="Machined discs" aria-label="Open Machined discs"><span class="g-ph"><img src="img/discs.webp" width="1100" height="749" alt="Stack of machined grey discs wrapped for dispatch" loading="lazy" decoding="async"></span><span class="g-meta"><b>Machined discs</b><i>Machine Parts</i></span><span class="ph-tag">Built</span></button></li><li class="g-item" data-c="parts"><button class="g-btn" data-lb="img/washers.webp" data-cap="Sealing washer set" aria-label="Open Sealing washer set"><span class="g-ph"><img src="img/washers.webp" width="1100" height="723" alt="Metal and rubber sealing washers" loading="lazy" decoding="async"></span><span class="g-meta"><b>Sealing washer set</b><i>Machine Parts</i></span><span class="ph-tag">Built</span></button></li><li class="g-item" data-c="dies"><button class="g-btn" data-lb="img/die-a.webp" data-cap="Die block assembly" aria-label="Open Die block assembly"><span class="g-ph"><img src="img/die-a.webp" width="917" height="950" alt="CAD model of a die block with coloured clamp features" loading="lazy" decoding="async"></span><span class="g-meta"><b>Die block assembly</b><i>Dies & Tooling</i></span><span class="ph-tag">CAD</span></button></li><li class="g-item" data-c="dies"><button class="g-btn" data-lb="img/die-b.webp" data-cap="Die set, upper and lower" aria-label="Open Die set, upper and lower"><span class="g-ph g-cat"><img src="img/die-b.webp" width="899" height="950" alt="CAD model of stacked die blocks with handles" loading="lazy" decoding="async"></span><span class="g-meta"><b>Die set, upper and lower</b><i>Dies & Tooling</i></span><span class="ph-tag">CAD</span></button></li><li class="g-item" data-c="dies"><button class="g-btn" data-lb="img/die-c.webp" data-cap="Die set, alternate layout" aria-label="Open Die set, alternate layout"><span class="g-ph g-cat"><img src="img/die-c.webp" width="936" height="950" alt="CAD model of a die set in an offset layout" loading="lazy" decoding="async"></span><span class="g-meta"><b>Die set, alternate layout</b><i>Dies & Tooling</i></span><span class="ph-tag">CAD</span></button></li><li class="g-item" data-c="dies"><button class="g-btn" data-lb="img/die-d.webp" data-cap="Die body" aria-label="Open Die body"><span class="g-ph"><img src="img/die-d.webp" width="950" height="898" alt="CAD model of a die body with slots" loading="lazy" decoding="async"></span><span class="g-meta"><b>Die body</b><i>Dies & Tooling</i></span><span class="ph-tag">CAD</span></button></li><li class="g-item" data-c="conveyor"><button class="g-btn" data-lb="img/conveyor.webp" data-cap="Mesh-belt conveyor line" aria-label="Open Mesh-belt conveyor line"><span class="g-ph g-cat"><img src="img/conveyor.webp" width="1069" height="1100" alt="Mesh-belt conveyor with cooling fans on a steel frame" loading="lazy" decoding="async"></span><span class="g-meta"><b>Mesh-belt conveyor line</b><i>Conveyor Lines</i></span><span class="ph-tag">Reference</span></button></li><li class="g-item" data-c="conveyor"><button class="g-btn" data-lb="img/mill.webp" data-cap="Mixing mill with hydraulics" aria-label="Open Mixing mill with hydraulics"><span class="g-ph g-cat"><img src="img/mill.webp" width="1100" height="789" alt="Two-roll mixing mill with hydraulic power pack" loading="lazy" decoding="async"></span><span class="g-meta"><b>Mixing mill with hydraulics</b><i>Conveyor Lines</i></span><span class="ph-tag">Reference</span></button></li><li class="g-item" data-c="conveyor"><button class="g-btn" data-lb="img/extruder.webp" data-cap="Extruder line" aria-label="Open Extruder line"><span class="g-ph g-cat"><img src="img/extruder.webp" width="1100" height="752" alt="Screw extruder with control panel" loading="lazy" decoding="async"></span><span class="g-meta"><b>Extruder line</b><i>Conveyor Lines</i></span><span class="ph-tag">Reference</span></button></li></ul>
+  <p class="g-note">Tagged <b>Built</b> = manufactured part, <b>CAD</b> = design model, <b>Reference</b> = representative machine type.</p>
+</section>
+<section class="sec vids" id="shopfloor">
+  <div class="head rv"><span class="idx">[ Shop floor ]</span><span class="label">From the workshop</span></div>
+  <div class="vid-row">
+    <figure class="vid rv"><video muted playsinline loop preload="none" poster="img/shopfloor-fixture.jpg" data-autoplay><source src="img/shopfloor-fixture.mp4" type="video/mp4"></video><figcaption>Long fixture, finished and wrapped</figcaption></figure>
+    <figure class="vid rv"><video muted playsinline loop preload="none" poster="img/inspection.jpg" data-autoplay><source src="img/inspection.mp4" type="video/mp4"></video><figcaption>Dimensional check with a micrometer</figcaption></figure>
+    <div class="vid-copy rv"><h3>Checked before it ships.</h3><p>Fixtures and machined parts are measured in-house before dispatch. Tell us the tolerance and we build and verify to it.</p><a class="btn btn-line" href="contact.html"><span>Send a drawing</span><span class="ar" aria-hidden="true">→</span></a></div>
+  </div>
+</section>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Image viewer" hidden><button class="lb-x" aria-label="Close">×</button><img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><p class="lb-c"></p></div>
+<nav class="pn" aria-label="Page navigation">
+  <a href="capabilities.html"><small>← Previous</small><span>Capabilities</span></a>
+  <a href="simulation.html"><small>Next →</small><span>Simulation</span></a>
+</nav>
+</main>
+<footer class="ftr">
+  <div class="ftr-top">
+    <div>
+      <a class="brand" href="index.html" aria-label="Atelier Vision Technologies, home"><img class="brand-logo" src="img/logo.webp" width="900" height="475" alt=""></a>
+      <address class="ftr-addr"><b>Visit us</b>Gat No. 394, Pune&ndash;Bengaluru Highway,<br>Khed Shivapur Baug, Tal-Haveli,<br>Dist-Pune &ndash; 412205</address>
+    </div>
+    <nav aria-label="Footer"><a href="index.html">Home</a><a href="capabilities.html">Capabilities</a><a href="projects.html">Projects</a><a href="simulation.html">Simulation</a><a href="automation.html">Automation</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+    <div class="enq">
+      <h2>Have an engineering challenge?</h2>
+      <a class="btn btn-solid" href="contact.html"><span>Start a project</span><span class="ar" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+  <div class="ftr-bot"><span>Engineering ideas into real solutions.</span><span>Pune, India</span></div>
+</footer>
+<a class="wa" href="https://wa.me/?text=Hello%20Atelier%20Vision%20Technologies%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp"><span class="wa-lbl">Chat on WhatsApp</span><span class="wa-ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></span></a>
+<script src="app.js" defer></script>
+<script src="fx.js" defer></script>
+<script src="media.js" defer></script>
+</body>
+</html>
